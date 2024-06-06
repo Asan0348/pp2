@@ -1,1 +1,4 @@
-
+if 5 > 2:
+  print("five > two")
+if 10 > 5:
+  print("10 > 5")
