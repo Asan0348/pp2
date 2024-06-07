@@ -1,0 +1,14 @@
+a = "Hello, World!"
+print(a.upper())
+print(a.lower())
+x = a[2:5]
+print(x.upper())
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+a = "Hello, World!"
+print(a.replace("H", "J"))
+print(a.replace("H", "gol"))
+
+print(a.split(",")) # returns ['Hello', ' World!']
+print(a.split("l")) # ['He', '', 'o, Wor', 'd!']
