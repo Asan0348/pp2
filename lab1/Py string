@@ -1,1 +1,22 @@
+print("Hello")
+print('Hello')
+print("hi 'jo'")
 
+a = """ hi jo
+hi sam """
+print (a)
+
+a = "Hello, World!"
+print(a[1])
+
+y = "folda"
+for x in y:
+    print (x) #вывод по буквам
+print(len(y)) #длина строки
+txt = "The best things in life are free!"
+print("free" in txt) #проверка о наличии конкретного слова в строке
+if "best" in txt:
+    print("yes")
+print("expensive" not in txt)
+if "expensive" not in txt:
+    print("expensive not in txt")
