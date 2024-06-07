@@ -1,0 +1,14 @@
+x = "hi"
+def fun():
+    print(x)
+fun()
+
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
