@@ -1,0 +1,16 @@
+age = 36
+txt = "My name is John, I am " + age
+print(txt)
+
+txt = f"My name is John, I am {age}"
+print(txt)
+
+x = 70
+txt = f"I have {x} dolars"
+print (txt)
+x = 70.4444455
+txt = f"I have {x: .2f} dolars"
+print (txt)
+
+txt = f"I have {x + 7} dolars"
+print (txt)
