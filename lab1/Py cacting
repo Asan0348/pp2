@@ -1,0 +1,5 @@
+x = int(1)
+y = float(2.9)
+z = str("2 goo") 
+print(x + y)
+print(z)
