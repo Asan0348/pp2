@@ -1,0 +1,20 @@
+myList = ["cherry", "apple", "banana", "pineaple"]
+print(myList)
+print(myList[1])
+print(myList[1:3])
+print("------")
+
+if "apple" in myList:
+  print("Yes, 'apple' is in the fruits list")
+print("------")
+
+myList[1] = "lemon"
+print(myList)
+
+myList[1:3] = ["blackcurrant", "watermelon"]
+print(myList)
+
+myList = ["cherry", "apple", "banana", "pineaple"]
+
+myList.insert(1, "wow")
+print(myList)
