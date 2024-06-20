@@ -1,0 +1,8 @@
+def palindrom(s):
+    rev_s = s[:: -1]
+    if(s == rev_s): return True
+    else: False
+
+word = input("введите слово: ")
+if(palindrom(word)):print("True")
+else: print("false")
