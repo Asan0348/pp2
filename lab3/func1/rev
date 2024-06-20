@@ -1,0 +1,10 @@
+def comp (s):
+    w = s.split()
+    w_rev = w[:: -1]
+    rev = ' '.join(w_rev)
+    return rev
+
+sent = input()
+rev_s = comp(sent)
+print(rev_s)
+
