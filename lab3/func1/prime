@@ -1,0 +1,31 @@
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num == 2:
+        return True  
+    if num % 2 == 0:
+        return False  
+    for i in range(3, int(num**0.5) + 1, 2):
+        if num % i == 0:
+            return False
+    return True
+
+def get_prime_numbers(nums):
+    prime_numbers = []
+    for num in nums:
+        if is_prime(num):
+            prime_numbers.append(num)
+    return prime_numbers
+
+user_input = input("Введите элементы списка, разделённые пробелами: ")
+
+numbers = user_input.split()
+
+
+numbers = [int(num) for num in numbers]
+
+
+prime_numbers = get_prime_numbers(numbers)
+
+
+print("Простые числа из списка:", prime_numbers)
