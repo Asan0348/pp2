@@ -1,0 +1,7 @@
+def comp(nums):
+    for num in nums:
+        print('*' * num)
+n = input("Введите элементы списка, разделённые пробелами: ")
+r = n.split()
+r = [int(num) for num in r]
+comp(r)
