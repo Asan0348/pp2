@@ -1,0 +1,7 @@
+# convert grams to ounces. ounces = 28.3495231 * grams
+def conv(oun) :
+    grams = oun / 28.35
+    print(grams)
+
+nums = float (input())
+conv(nums)
