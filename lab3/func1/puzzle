@@ -1,0 +1,10 @@
+def comp(head, leg):
+    c = (4 * head - leg) // 2
+    r = head - c
+    return c, r
+ 
+numheads = 35
+numlegs = 94
+chickens, rabbits = comp(numheads, numlegs)
+print(f"Number of chickens: {chickens}")
+print(f"Number of rabbits: {rabbits}")
