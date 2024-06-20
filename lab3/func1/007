@@ -1,0 +1,12 @@
+#Напишите функцию, которая принимает список целых чисел и возвращает True, если она содержит по порядку007
+def comp(nums):
+    for i in range(len(nums)):
+        x = nums[i]
+        if x == 0 and nums[i + 1] == 0 and nums[i + 2] == 7:
+            return True
+    return False
+n = input("Введите элементы списка, разделённые пробелами: ")
+r = n.split()
+r = [int(num) for num in r]
+if(comp(r)) : print("True")
+else: print("False")
