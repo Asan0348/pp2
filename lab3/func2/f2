@@ -1,0 +1,42 @@
+#Напишите функцию, возвращающую подсписок фильмов с оценкой IMDB выше 5,5.
+def is_good_movie(movie):
+    return movie["imdb"] > 5.5
+
+movies = [
+{
+"name": "Usual Suspects", 
+"imdb": 7.0,
+"category": "Thriller"
+},
+{
+"name": "The Help",
+"imdb": 8.0,
+"category": "Drama"
+},
+{
+"name": "The Choice",
+"imdb": 6.2,
+"category": "Romance"
+},
+{
+"name": "Colonia",
+"imdb": 7.4,
+"category": "Romance"
+},
+{
+"name": "AlphaJet",
+"imdb": 3.2,
+"category": "War"
+},
+{
+"name": "Ringing Crime",
+"imdb": 4.0,
+"category": "Crime"
+}
+]
+
+for movie in movies:
+    if is_good_movie(movie):
+        print(f"{movie ['name']} is a good movie")
+    else:
+        print(f"{movie ['name']} is a bad movie")
