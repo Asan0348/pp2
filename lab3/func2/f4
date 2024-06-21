@@ -1,0 +1,13 @@
+#Напишите функцию, которая принимает список фильмов и вычисляет среднюю оценку IMDB.
+from movies import movies
+
+def comp(movie):
+    sum = 0
+    s = 0
+    for m in movie:
+        sum += m["imdb"]
+        s += 1
+    av = sum / s
+    print(f"average imdb is {av}")
+
+comp(movies)
