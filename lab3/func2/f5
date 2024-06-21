@@ -1,0 +1,29 @@
+#Напишите функцию, которая принимает категорию и вычисляет среднюю оценку IMDB.
+from movies import movies
+
+def comp(movie, cat):
+    return movie["category"] == cat
+
+def av(movie):
+    sum = 0
+    s = 0
+    for m in movie:
+        sum += m["imdb"]
+        s += 1
+    av = sum / s
+    print(f"average imdb is {av}")
+
+
+c = input("Which category? ")
+
+av(movies)
+
+f = False
+for movie in movies:
+    if comp(movie, c):
+        print(f"{movie['name']} fits your category")
+        
+        f = True
+
+if not f:
+    print("No films fit your category")
