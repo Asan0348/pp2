@@ -1,0 +1,28 @@
+#Напишите функцию, которая принимает один фильм и возвращает, если его оценка на IMDB выше 5,5True
+def is_good_movie(movie):
+    return movie["imdb"] > 5.5
+
+
+movie = {
+    "name": "Usual Suspects", 
+    "imdb": 7.0,
+    "category": "Thriller"
+}
+
+print(is_good_movie(movie))  
+
+movie2 = {
+    "name": "Hitman",
+    "imdb": 6.3,
+    "category": "Action"
+}
+
+print(is_good_movie(movie2))  
+
+movie3 = {
+    "name": "Some Bad Movie",
+    "imdb": 4.3,
+    "category": "Comedy"
+}
+
+print(is_good_movie(movie3))  
