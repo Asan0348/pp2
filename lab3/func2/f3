@@ -1,0 +1,16 @@
+#Напишите функцию, которая принимает название категории и возвращает только те фильмы, которые входят в эту категорию.
+from movies import movies
+
+def comp(movie, cat):
+    return movie["category"] == cat
+
+c = input("Which category? ")
+
+f = False
+for movie in movies:
+    if comp(movie, c):
+        print(f"{movie['name']} fits your category")
+        f = True
+
+if not f:
+    print("No films fit your category")
